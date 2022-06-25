@@ -1,0 +1,25 @@
+
+nav{
+    background-color: #1b5693 !important;
+    padding: 0.2vh 0 !important;
+}
+
+.user-info {
+    text-decoration: none;
+    color: white;
+}
+
+.user-info>div >img{
+    height: 6.5vh;
+    margin-right: 10px;
+}
+
+.menu a{
+    padding: 0 30px !important;
+    transition: all 200ms ease-in-out;
+}
+
+.menu a:hover{
+    transform: scale(1.1);
+}
+
