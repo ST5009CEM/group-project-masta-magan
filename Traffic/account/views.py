@@ -23,6 +23,18 @@ def profile_page(request):
 def user_login(request):
     return render(request,'user/login.html')
 
+def token_page(request):
+        return render(request,'user/token.html')
+
+def history_page(request):
+        return render(request,'user/history.html')
+
+
+
+def report_page(request):
+    return render(request,'user/report.html')
+
+
 def login_verification(request):
     if request.method == 'POST':
         username = request.POST['username']

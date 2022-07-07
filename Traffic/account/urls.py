@@ -23,7 +23,12 @@ urlpatterns = [
     path('',views.home_page),
     path('home/',views.home_page),
     path('calander/',views.calander_page),
-    path('profile/',views.profile_page),    
+    path('profile/',views.profile_page),
+    path('token/',views.token_page),  
+    path('history/',views.history_page),
+    path('report/',views.report_page),  
+
+
 
 
 
