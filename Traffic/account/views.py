@@ -15,6 +15,9 @@ def home_page(request):
 def calander_page(request):
         return render(request,'user/calander.html')
 
+def profile_page(request):
+        return render(request,'user/profile.html')
+
 
 
 def user_login(request):

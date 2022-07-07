@@ -22,7 +22,9 @@ urlpatterns = [
 
     path('',views.home_page),
     path('home/',views.home_page),
-    path('calander/',views.calander_page),    
+    path('calander/',views.calander_page),
+    path('profile/',views.profile_page),    
+
 
 
 ]

@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/user/profileStyle.css'%}"> {% endblock %}
+
+{% block content %}
+
+
+<main>
+
+    <div class="container-fluid first-container">
+        <div class=" profile-container">
+            <div class="row main-info">
+                <div class="col-lg-5 profile-image">
+                    <img src="../static/Images/about/Rodgers2021.png" alt="">
+                </div>
+                <div class="col-lg-7 profile-info">
+                    <div>
+                        <div class="row">
+                            <div class="col-12 info-text">
+                                <p class="fs-3 fw-bold">ABOUT ME</p>
+                                <p>Inspector of General Police</p>
+                                <p>Nepal Police is the national and primary law enforcement agency of Nepal. It is primarily responsible for maintaining law and order, prevention of crime and crime investigation within the jurisdiction determined by the Constitution of Nepal.</p>
+                                <div class="row info-holder">
+                                    <div class="col-md-6">
+                                        <p><span>Badge Number:</span>&nbsp; <span>CFC9865198FF</span> </p>
+                                        <p><span>Section:</span>&nbsp; <span>STATE 23</span> </p>
+                                        <p><span>Role:</span>&nbsp; <span>Inspector of Police</span> </p>
+                                        <p><span>Area:</span>&nbsp; <span>Kathmandu</span> </p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p><span>DOB:</span>&nbsp; <span> 4th April 1984</span></p>
+                                        <p><span>Age:</span>&nbsp; <span>50</span></p>
+                                        <p><span>Contact:</span>&nbsp; <span>9841414498</span></p>
+                                        <p><span>Address:</span>&nbsp; <span>Bhattathok, Nuwakot</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" secondary-info">
+                <div class="row">
+                    <div class="col-3 text-center">
+                        <p>190</p>
+                        <p>Medals</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <p>5</p>
+                        <p>Badges</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <p>66</p>
+                        <p>Solved Cases</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <p>255</p>
+                        <p>Cheat taken</p>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+{% endblock %}
