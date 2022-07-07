@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/indexStyle.css'%}"> {% endblock %}
+
+{% block content %}
+
+<main>
+
+    <!-- Fisrt Container Starts -->
+    <div class="container-fluid first-container">
+
+        <!-- Image slider and Inspecctor Details -->
+        <div class="row">
+            <div class="col-xl-9 image-slider">
+                <div>
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../static/Images/index/kathmandu-psd-copy-1552022042644-1000x0.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../static/Images/index/kathmandu-psd-copy-1552022042644-1000x0.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../static/Images/index/kathmandu-psd-copy-1552022042644-1000x0.jpg" alt="" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100"  role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                      
+                </div>
+                
+            </div>
+            <!-- Image Slider Ends -->
+
+            <!-- Police Info -->
+            <div class="col-xl-3 inspector">
+                <div class="row ">
+                    <div class="col-xl-12 col-5 bg-white">
+                        <div class="inspector-image">
+                            <img src="../static/Images/index/igp-dhiraj-pratap-singh.png" alt="">
+                        </div>
+                        <div class="text-center inspector-info mt-3">
+                            <article>Hari Bhadaur Sing</article>
+                            <article class="text-muted">Inspector of General Police</article>
+                        </div>
+                    </div>
+                    <div class="col-xl-12  col-5 bg-white">
+                        <div class="inspector-image">
+                            <img src="../static/Images/index/igp-dhiraj-pratap-singh.png" alt="">
+                        </div>
+                        <div class="text-center inspector-info mt-3">
+                            <article >Hari Bhadaur Sing</article>
+                            <article class="text-muted">Inspector of General Police</article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Police Info Ends -->
+        </div>
+
+    </div>
+
+    <!-- Fisrt Container Ends -->
+
+    <!-- Second Container -->
+    <div class="container-fluid second-container">
+        <div class="row">
+            <!-- Todays News -->
+                <div class="col-xl-9 todays-news">
+                    <div>
+                        <div class="row news-title">
+                            <div class="col-12 d-flex news-nav">
+                                <article>TODAY'S NEWS</article>
+                                <article>&#10093;</article>
+                              </div>
+                        </div>
+                        <div class="row new-container bg-white">
+                            <div class="col-md-5 col-10 news">
+                                <blockquote class="twitter-tweet">
+                                    <p lang="ne" dir="ltr">
+                                      किन मतगणना गर्न खटिन चाहँदैनन् कर्मचारी?
+                                      <a href="https://t.co/prpgfoDHOT">https://t.co/prpgfoDHOT</a>
+                                    </p>
+                                    &mdash; BBC News Nepali (@bbcnepali)
+                                    <a
+                                      href="https://twitter.com/bbcnepali/status/1526834122974371841?ref_src=twsrc%5Etfw"
+                                      >May 18, 2022</a
+                                    >
+                                  </blockquote>
+                                  <script
+                                    async
+                                    src="https://platform.twitter.com/widgets.js"
+                                    charset="utf-8"
+                                  ></script>
+                            </div>
+                            <div class="col-md-5 col-10 news">
+                                <blockquote class="twitter-tweet">
+                                    <p lang="ne" dir="ltr">
+                                      किन मतगणना गर्न खटिन चाहँदैनन् कर्मचारी?
+                                      <a href="https://t.co/prpgfoDHOT">https://t.co/prpgfoDHOT</a>
+                                    </p>
+                                    &mdash; BBC News Nepali (@bbcnepali)
+                                    <a
+                                      href="https://twitter.com/bbcnepali/status/1526834122974371841?ref_src=twsrc%5Etfw"
+                                      >May 18, 2022</a
+                                    >
+                                  </blockquote>
+                                  <script
+                                    async
+                                    src="https://platform.twitter.com/widgets.js"
+                                    charset="utf-8"
+                                  ></script>
+                            </div>
+                            <div class="col-md-5 col-10 news">
+                                <blockquote class="twitter-tweet">
+                                    <p lang="ne" dir="ltr">
+                                      किन मतगणना गर्न खटिन चाहँदैनन् कर्मचारी?
+                                      <a href="https://t.co/prpgfoDHOT">https://t.co/prpgfoDHOT</a>
+                                    </p>
+                                    &mdash; BBC News Nepali (@bbcnepali)
+                                    <a
+                                      href="https://twitter.com/bbcnepali/status/1526834122974371841?ref_src=twsrc%5Etfw"
+                                      >May 18, 2022</a
+                                    >
+                                  </blockquote>
+                                  <script
+                                    async
+                                    src="https://platform.twitter.com/widgets.js"
+                                    charset="utf-8"
+                                  ></script>
+                            </div>
+                            <div class="col-md-5 col-10 news">
+                                <blockquote class="twitter-tweet">
+                                    <p lang="ne" dir="ltr">
+                                      किन मतगणना गर्न खटिन चाहँदैनन् कर्मचारी?
+                                      <a href="https://t.co/prpgfoDHOT">https://t.co/prpgfoDHOT</a>
+                                    </p>
+                                    &mdash; BBC News Nepali (@bbcnepali)
+                                    <a
+                                      href="https://twitter.com/bbcnepali/status/1526834122974371841?ref_src=twsrc%5Etfw"
+                                      >May 18, 2022</a
+                                    >
+                                  </blockquote>
+                                  <script
+                                    async
+                                    src="https://platform.twitter.com/widgets.js"
+                                    charset="utf-8"
+                                  ></script>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            <!-- Todays News Ends -->
+
+            <!-- Nepal police page -->
+            <div class="col-xl-3 police-news">
+                <div>
+                    <div class="row news-title">
+                        <div class="col-12 d-flex news-nav">
+                            <article>NEPAL POLICE UPDATE</article>
+                            <article>&#10093;</article>
+                        </div>
+                    </div>
+                    <div class="row police-container bg-white">
+
+                        <div class="col-12 police-youtube">
+                            <iframe
+                            width="400"
+                            height="315"
+                            src="https://www.youtube.com/embed/4gSmq1D77Dc"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                            ></iframe>
+                        </div>
+
+                        <div class="col-12 police-twitter">
+                            <a
+                            class="twitter-timeline"
+                            data-width="400"
+                            data-height="850"
+                            data-theme="light"
+                            href="https://twitter.com/NepalPoliceHQ?ref_src=twsrc%5Etfw"
+                            >Tweets by NepalPoliceHQ</a
+                          >
+                          <script
+                            async
+                            src="https://platform.twitter.com/widgets.js"
+                            charset="utf-8"
+                          ></script>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Nepal police page Ends -->
+        </div>
+    </div>
+    <!-- Secon Container Ends -->
+
+</main>
+
+
+{% endblock %}
