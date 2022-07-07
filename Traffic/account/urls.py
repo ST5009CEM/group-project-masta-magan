@@ -21,6 +21,8 @@ urlpatterns = [
     path('login/verification',views.login_verification),
 
     path('',views.home_page),
-    path('home/',views.home_page)    
+    path('home/',views.home_page),
+    path('calander/',views.calander_page),    
+
 
 ]

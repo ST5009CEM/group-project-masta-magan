@@ -12,6 +12,10 @@ from django.contrib.auth import logout
 def home_page(request):
     return render(request,'user/home.html')
 
+def calander_page(request):
+        return render(request,'user/calander.html')
+
+
 
 def user_login(request):
     return render(request,'user/login.html')
