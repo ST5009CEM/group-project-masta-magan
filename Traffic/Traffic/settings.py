@@ -40,7 +40,8 @@ INSTALLED_APPS = [
 
     # Custom App
 
-    'account.apps.AccountConfig'
+    'account.apps.AccountConfig',
+    'user.apps.UserConfig'
 ]
 
 MIDDLEWARE = [
