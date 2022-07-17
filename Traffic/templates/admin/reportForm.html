@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/user/cheatform.css'%}"> {% endblock %}
+
+{% block content %}
+    <main class="container">
+
+        <form
+                action="/vechile/admin/report"
+                method="post"
+            >
+                <h1>Report</h1>
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Vechile Type</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="vechiletype"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Owner Name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="name"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Vechile Name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="vechilename"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Engine Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="enginenumber"
+                            />
+                        </div>
+
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Vechile Color</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="color"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Phone Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="phonenumber"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Vechile Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="number"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Date</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="date"
+                            />
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="col-12 mt-5">
+
+
+                    <input
+                    type="submit"
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                    value="Report"
+                />
+             
+                    
+                </div>
+            </form>
+        
+    </main>
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}

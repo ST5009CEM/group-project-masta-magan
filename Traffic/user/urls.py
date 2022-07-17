@@ -26,6 +26,8 @@ urlpatterns = [
     path('login/',views.user_login),
     path('loginverification/',views.login_verification),
     path('logout/',views.log_out),
+        path('addreport/',views.addreport_page),  
+
 
 
 

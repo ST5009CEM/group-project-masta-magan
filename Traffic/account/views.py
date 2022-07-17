@@ -38,8 +38,10 @@ def history_page(request):
 
 
 def report_page(request):
-    data = LostModel.objects.all()
-    return render(request,'user/report.html',{'data':data})
+    data = LostModel.objects.all().filter(resolved='reported')
+    file = LostModel.objects.all().filter(resolved='solved')
+
+    return render(request,'user/report.html',{'data':data,'file':file})
 
 def addreport_page(request):
     return render(request,'user/reportform.html')

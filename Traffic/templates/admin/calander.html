@@ -1,0 +1,90 @@
+{% extends 'adminbase.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/user/calanderStyle.css'%}"> {% endblock %}
+
+{% block content %}
+
+<main>
+    <div class="container first-container">
+        <div class="row">
+            <!-- Calander Mobile Part -->
+            <div id='mobile-calander' class="mobile-calander col-1 offset-1">
+                <p>C</p>
+                <p>A</p>
+                <p>L</p>
+                <p>E</p>
+                <p>N</p>
+                <p>D</p>
+                <p>E</p>
+                <p>R</p>
+            </div>
+            <!-- Calander Mobile Ends -->
+            <!-- Calander -->
+                <div class="col-xl-4 offset-xl-2 col-md-6 offset-md-0 col-9 offset-1  calander" id="calender">
+                    <div class="month">
+                        <i class="prev">&#10094;</i>
+                        <div class="date">
+                            <h1> </h1>
+                            <p> </p>
+                            <hr>
+                        </div>
+                        <i class="next">&#10095;</i>
+                    </div>
+                    <div class="weekdays" >
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thus</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                    </div>
+                    <div id="days" class="days">
+                        
+                    </div>
+                    <div class="button">
+                        <button>Add Event</button>
+                    </div> 
+                </div>
+            <!-- Calander -->
+            <!-- Mobile Event Part -->
+            <div id="mobile-event" class="col-1 mobile-event">
+                <p>R</p>
+                <p>E</p>
+                <p>M</p>
+                <p>I</p>
+                <p>N</p>
+                <p>D</p>
+                <p>E</p>
+                <p>R</p>
+                <p>S</p>
+
+            </div>
+            <!-- Mobile Event Ends -->
+
+            <!-- Events -->
+
+            <div class="col-xl-4 col-md-6 col-9 event" id="event">
+                <div class="event-heading">
+                    <h1>Reminders</h1>
+                    <p></p>
+                </div>
+                <div class="event-info">
+
+                </div>
+            </div>
+
+            <!-- Events -->
+        </div>    
+    </div>
+</main>    
+
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'js/user/calanderScript.js'%}"></script>
+{% endblock %}

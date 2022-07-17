@@ -18,7 +18,10 @@ from django.urls import path
 from vechiles import views
 urlpatterns = [
     path('createcheat',views.createcheat),
-        path('report',views.report),
+    path('report',views.report),
+        path('admin/report',views.admin_report),
+
+    path('found/<int:id>',views.found)
 
    
 

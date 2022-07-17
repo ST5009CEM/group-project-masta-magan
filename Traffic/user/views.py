@@ -10,6 +10,8 @@ from django.contrib import messages
 
 from vechiles.models import CheatModel
 
+from vechiles.models import LostModel
+
 
 
 # Create your views here.
@@ -21,12 +23,12 @@ def home_page(request):
 @login_required(login_url='/admin/login')
 
 def calander_page(request):
-        return render(request,'user/calander.html')
+        return render(request,'admin/calander.html')
 
 @login_required(login_url='/admin/login')
 
 def addprofile_page(request):
-        return render(request,'user/profile.html')
+        return render(request,'admin/profile.html')
 
 
 
@@ -38,15 +40,21 @@ def user_login(request):
 
 def history_page(request):
         data = CheatModel.objects.all()
-
-        return render(request,'user/history.html')
+        return render(request,'admin/history.html',{'data':data})
 
 
 @login_required(login_url='/admin/login')
 
 def report_page(request):
-    return render(request,'user/report.html')
+    data = LostModel.objects.all().filter(resolved='reported')
+    file = LostModel.objects.all().filter(resolved='solved')
 
+    return render(request,'admin/report.html',{'data':data,'file':file})
+
+@login_required(login_url='/admin/login')
+
+def addreport_page(request):
+    return render(request,'admin/reportform.html')
 
 def login_verification(request):
     if request.method == 'POST':
