@@ -15,14 +15,30 @@
 
     <header>
 
+       
+
+
         <nav>
             <div>
                 <img src="{% static 'Images/login/nepal-govt.png'%}" alt="">
             </div>
+
+                {% if messages %}
+                {% for message in messages %}
+            <div class="alert alert-warning alert-dismissible fade show" role="alert" >
+                <strong>ERROR !</strong> {{message}}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+
+            {% endfor %}
+
+      {% endif %}
             <div>
                 <img src="{% static 'Images/login/WavingFlag.gif'%}" alt="">
             </div>
         </nav>
+
+
 
     </header>
 
@@ -33,14 +49,15 @@
                 <div class="row">
                     <div class="col-lg-6 form">
                         <h1> Admin Login</h1>
-                            <form>
+                            <form method="post" action="/admin/loginverification/">
+                                {%csrf_token%}
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Username</label>
-                                  <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="" name="username">
+                                  <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="" name="username" required>
                                 </div>
                                 <div class="mb-3">
                                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                                  <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                                  <input type="password" class="form-control" id="exampleInputPassword1" name="password" required>
                                 </div>
                              
                                 <button type="submit" class="btn btn-primary">Login</button>
