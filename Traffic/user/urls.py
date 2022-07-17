@@ -15,16 +15,12 @@ Including another URLconf
 """
 
 from django.urls import path
-from account import views
+from user import views
 urlpatterns = [
-    path('login/',views.user_login),
-    path('login/verification',views.login_verification),
-
     path('',views.home_page),
     path('home/',views.home_page),
-    path('calander/',views.calander_page),
-    path('profile/',views.profile_page),
-    path('token/',views.token_page),  
+    path('updatecalander/',views.calander_page),
+    path('addprofile/',views.addprofile_page),
     path('history/',views.history_page),
     path('report/',views.report_page),  
 
