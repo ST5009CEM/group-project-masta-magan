@@ -22,15 +22,17 @@
                 </tr>
             </thead>
             <tbody>
+
+                {% for datas in data %}
                 <tr>
                     <td> 
                          
-                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> Adip Thapaliya  
+                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> {{datas.name}}  
 
                     </td>
-                    <td>CBR 600</td>
-                    <td>Ba 2 Pa 3535</td>
-                    <td>01-0556-519519515</td>
+                    <td>{{datas.vechilename}}  </td>
+                    <td>{{datas.number}}  </td>
+                    <td>{{datas.licence}}  </td>
                     <td>
                         <div class="status">
                             <div> </div>
@@ -38,129 +40,14 @@
                         </div>
                     </td>
                     <td>
-                        <p>Rule Voilated: One Way</p>
-                        <p>Added On: 15 Jan 1998 (15:45)</p>
-                        <p>Amout: Rs 500</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                         
-                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> Adip Thapaliya  
-
-                    </td>
-                    <td>CBR 600</td>
-                    <td>Ba 2 Pa 3535</td>
-                    <td>01-0556-519519515</td>
-                    <td>
-                        <div class="status">
-                            <div> </div>
-                            <div>Unpaid</div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Rule Voilated: One Way</p>
-                        <p>Added On: 15 Jan 1998 (15:45)</p>
-                        <p>Amout: Rs 500</p>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                         
-                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> Adip Thapaliya  
-
-                    </td>
-                    <td>CBR 600</td>
-                    <td>Ba 2 Pa 3535</td>
-                    <td>01-0556-519519515</td>
-                    <td>
-                        <div class="status">
-                            <div> </div>
-                            <div>Paid</div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Rule Voilated: One Way</p>
-                        <p>Added On: 15 Jan 1998 (15:45)</p>
-                        <p>Amout: Rs 500</p>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                         
-                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> Adip Thapaliya  
-
-                    </td>
-                    <td>CBR 600</td>
-                    <td>Ba 2 Pa 3535</td>
-                    <td>01-0556-519519515</td>
-                    <td>
-                        <div class="status">
-                            <div> </div>
-                            <div>Unpaid</div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Rule Voilated: One Way</p>
-                        <p>Added On: 15 Jan 1998 (15:45)</p>
-                        <p>Amout: Rs 500</p>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                         
-                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> Adip Thapaliya  
-
-                    </td>
-                    <td>CBR 600</td>
-                    <td>Ba 2 Pa 3535</td>
-                    <td>01-0556-519519515</td>
-                    <td>
-                        <div class="status">
-                            <div> </div>
-                            <div>Paid</div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Rule Voilated: One Way</p>
-                        <p>Added On: 15 Jan 1998 (15:45)</p>
-                        <p>Amout: Rs 500</p>
-
-                    </td>
-                </tr>
-                <tr>
-                    <td> 
-                         
-                       <img src="../Images/yahoo-profile-update-e1543323322554.jpg" alt="" width=""> Adip Thapaliya  
-
-                    </td>
-                    <td>CBR 600</td>
-                    <td>Ba 2 Pa 3535</td>
-                    <td>01-0556-519519515</td>
-                    <td>
-                        <div class="status">
-                            <div> </div>
-                            <div>Unpaid</div>
-                        </div>
-                    </td>
-                    <td>
-                        <p>Rule Voilated: One Way</p>
-                        <p>Added On: 15 Jan 1998 (15:45)</p>
-                        <p>Amout: Rs 500</p>
-
+                        <p>Rule Voilated: {{datas.type}}  </p>
+                        <p>Amout: Rs {{datas.fine}}  </p>
                     </td>
                 </tr>
 
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-                <tr></tr>
-               
+                {% endfor %}
+                
+                
             </tbody>
         </table>
     </div>

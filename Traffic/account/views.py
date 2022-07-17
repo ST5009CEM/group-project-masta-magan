@@ -6,6 +6,8 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login as log
 from django.contrib.auth import logout
 
+from vechiles.models import CheatModel
+
 
 # Create your views here.
 
@@ -30,7 +32,8 @@ def create_cheat(request):
         return render(request,'user/cheatForm.html')
 
 def history_page(request):
-        return render(request,'user/history.html')
+        data = CheatModel.objects.all()
+        return render(request,'user/history.html',{'data':data})
 
 
 

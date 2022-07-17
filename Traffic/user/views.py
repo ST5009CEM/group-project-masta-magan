@@ -8,6 +8,7 @@ from django.contrib.auth import logout
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
+from vechiles.models import CheatModel
 
 
 
@@ -36,6 +37,8 @@ def user_login(request):
 @login_required(login_url='/admin/login')
 
 def history_page(request):
+        data = CheatModel.objects.all()
+
         return render(request,'user/history.html')
 
 

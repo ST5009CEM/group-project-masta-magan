@@ -5,7 +5,7 @@ from django.db import models
 class CheatModel (models.Model):
     id = models.AutoField(auto_created=True,primary_key=True)
     billbook = models.CharField(max_length=50)
-    licence = models.CharField(max_length=10)
+    licence = models.CharField(max_length=50)
     name = models.TextField(max_length=225)
     number = models.TextField(max_length=50)
     vechilename = models.TextField(max_length=100)
