@@ -16,180 +16,46 @@
           <button id="report">Reported</button>
           <button id="solved">Solved</button>
         </div>
+        <div class="add-button">
+          <a href="/addreport">
+            <button type="button" class="btn btn-primary">+</button>
+
+          </a>
+        </div>
   </div>
 
   <div class="container second-container">
 
       <!-- Only Repost List -->
       <div class="row report-list justify-content-between">
+        {%for datas in data %}
           <div class="col-lg-4 col-md-6">
               <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
+                  <h5><b>{{datas.vechiletype}} Lost</b> </h5>
+                  <p><i>{{datas.date}}</i></p>
                   <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
+                    <p><b>Owner Name:</b> {{datas.name}}</p>
+                    <p><b>Vechiles Name : </b> {{datas.vechilename}}</p>
+                    <p><b>Vechiles color:</b> {{datas.color}}</p>
+                    <p><b> Vechiles Number:</b>{{datas.number}}</p>
+                    <p><b> Engine Number:</b> {{datas.enginenumber}}</p>
 
                     <div class="found-button">
-                      <button>Found</button>
+                      <a href="">
+                        <button>Found</button>
+
+                      </a>
                     </div>
                   </div>
 
               </div>
           </div>
+          {%endfor%}
 
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
 
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
+          
 
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-              <div>
-                  <h5><b>Heading of the report</b> </h5>
-                  <p><i>Jun 18, 2020</i></p>
-                  <div class="vechiles-info">
-                    <p><b>Owner Name:</b> Adip Thapaliya</p>
-                    <p><b>Vechiles Name : </b> Ns 200</p>
-                    <p><b>Vechiles color:</b> Black and White</p>
-                    <p><b> Vechiles Number:</b> Ba 2 Kha 3252</p>
-                    <p><b> Engine Number:</b> JIYCK6F1851652</p>
-
-                    <div class="found-button">
-                      <button>Found</button>
-                    </div>
-                  </div>
-
-              </div>
-          </div>
+          
       </div>
       <!-- Report List Ends -->
 

@@ -28,7 +28,9 @@ urlpatterns = [
     path('cheat/createcheat',views.create_cheat),  
 
     path('history/',views.history_page),
-    path('report/',views.report_page),  
+    path('report/',views.report_page), 
+    path('addreport/',views.addreport_page),  
+
 
 
 

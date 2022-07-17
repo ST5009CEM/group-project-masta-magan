@@ -23,7 +23,7 @@
             </thead>
             <tbody>
 
-                {% for datas in data %}
+                {% for datas in data|dictsortreversed:"id" %}
                 <tr>
                     <td> 
                          

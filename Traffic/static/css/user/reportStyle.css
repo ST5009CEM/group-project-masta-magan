@@ -1,6 +1,7 @@
 .first-container{
     margin-top: 14vh;
     margin-bottom: 6vh;
+    display: flex;
 }
 
 
@@ -9,6 +10,10 @@
 .selected-button{
     width: 80%;
     margin: 0 auto;
+}
+
+.add-button button{
+  margin-right: 20px;
 }
 
 .selected-button button {

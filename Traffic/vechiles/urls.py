@@ -18,6 +18,8 @@ from django.urls import path
 from vechiles import views
 urlpatterns = [
     path('createcheat',views.createcheat),
+        path('report',views.report),
+
    
 
 

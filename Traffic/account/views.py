@@ -6,7 +6,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate,login as log
 from django.contrib.auth import logout
 
-from vechiles.models import CheatModel
+from vechiles.models import CheatModel, LostModel
 
 
 # Create your views here.
@@ -38,7 +38,11 @@ def history_page(request):
 
 
 def report_page(request):
-    return render(request,'user/report.html')
+    data = LostModel.objects.all()
+    return render(request,'user/report.html',{'data':data})
+
+def addreport_page(request):
+    return render(request,'user/reportform.html')
 
 
 def login_verification(request):
