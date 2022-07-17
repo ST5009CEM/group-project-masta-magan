@@ -9,8 +9,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 
 from vechiles.models import CheatModel
-
+from user.froms import UserInfoForm
 from vechiles.models import LostModel
+from django.contrib.auth.models import User
 
 
 
@@ -29,6 +30,45 @@ def calander_page(request):
 
 def addprofile_page(request):
         return render(request,'admin/profile.html')
+
+@login_required(login_url='/admin/login')
+
+def next_profilepage(request):
+    if request.method == "POST":
+
+        
+        f_name = request.POST['f_name']
+        l_name = request.POST['l_name']  
+        username = request.POST['username']
+        password = request.POST['password']  
+        email = request.POST['email']
+        cpassword = request.POST['confirmpassword']   
+
+        if password==cpassword: 
+
+            User.objects.create_user(
+                first_name = f_name,
+                last_name = l_name,
+                username = username,
+                password = password,
+                email = email,
+
+            )
+
+            user = User.objects.get(request,username=username,password=password)
+
+            return render(request,'admin/nextprofile.html',{'user',user})
+        
+
+    else:
+            return redirect("admin/addprofile")
+
+def next(request,id):
+    data = UserInfoForm(request.POST, request.FILES)
+    data.save()
+
+    return redirect('admin/addprofile')
+    
 
 
 

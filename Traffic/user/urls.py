@@ -21,6 +21,11 @@ urlpatterns = [
     path('home/',views.home_page),
     path('calander/',views.calander_page),
     path('addprofile/',views.addprofile_page),
+    path('adduser/',views.next_profilepage),
+    path('adduser/<int:id>',views.next),
+
+
+
     path('history/',views.history_page),
     path('report/',views.report_page),  
     path('login/',views.user_login),

@@ -1,0 +1,295 @@
+{% extends 'adminbase.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/user/cheatform.css'%}"> {% endblock %}
+
+{% block content %}
+    <main class="container">
+
+        <form
+                action="/admin/adduser/{{user.id}}"
+                method="post"
+                enctype="multipart/form-data"
+            >
+                <h1>Next Step</h1>
+                {% csrf_token %}
+                <div class="row">
+                    <hr class="mt-5 mb-5">
+
+                    <div class="col-12">
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Officer Title</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="f_name"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Badge Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="f_name"
+                            />
+                        </div>
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Section</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="f_name"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Role</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="username"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Area</label
+                            >
+                            <input
+                                type="password"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="password"
+                            />
+                        </div>
+
+                        
+
+                        
+                        
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >DOB</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="l_name"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Age</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="email"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Contact</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="confirmpassword"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Address</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="confirmpassword"
+                            />
+                        </div>
+
+                        
+                        
+                    </div>
+
+
+
+                <hr class="mt-5 mb-5">
+
+
+
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label for="product name" class="form-label"
+                            >Medals</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            required
+                            name="f_name"
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="product name" class="form-label"
+                            >Badges</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            required
+                            name="f_name"
+                        />
+                    </div>
+
+                    
+                    
+                </div>
+
+                <div class="col-lg-6">
+
+                    <div class="mb-3">
+                        <label for="product name" class="form-label"
+                            >Solved Cases</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            required
+                            name="l_name"
+                        />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="product-price" class="form-label"
+                            >Cheat Taken</label
+                        >
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder=""
+                            required
+                            name="email"
+                        />
+                    </div>
+    
+                    
+                </div>
+
+                <hr class="mt-5 mb-5">
+
+
+                <div class="col-lg-6">
+                    <div class="mb-3">
+                        <label
+                            for="exampleFormControlTextarea3"
+                            class="form-label"
+                            >Description</label
+                        >
+                        <textarea
+                            class="form-control"
+                            id="exampleFormControlTextarea3"
+                            rows="10"
+                            name="product_description"
+                        >
+                    </textarea
+                        >
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <figure class="figure mt-4 mb-3">
+                        <img
+                            id="output-image"
+                            src="{% static 'Images/download.svg' %}"
+                            class="figure-img img-fluid rounded"
+                            alt="A generic square placeholder image with rounded corners in a figure."
+                        />
+                        <figcaption class="figure-caption text-center">
+                            A caption for the above image.
+                        </figcaption>
+                    </figure>
+
+
+                    <input
+                        type="file"
+                        name="product_image"
+                        accept="image/*"
+                        id="file"
+                        onchange="loadFile(event)"
+                        class="form-control btn btn-primary"
+                    />
+                </div>
+
+
+
+            </div>
+
+            
+
+
+                
+
+                <div class="col-12 mt-5">
+
+
+                    <input
+                    type="submit"
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                    value="Add"
+                />
+             
+                    
+                </div>
+            </form>
+        
+    </main>
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
