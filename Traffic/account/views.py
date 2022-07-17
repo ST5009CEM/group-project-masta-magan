@@ -24,7 +24,10 @@ def user_login(request):
     return render(request,'user/login.html')
 
 def token_page(request):
-        return render(request,'user/token.html')
+        return render(request,'user/cheat.html')
+
+def create_cheat(request,biketype):
+        return render(request,'user/cheatForm.html')
 
 def history_page(request):
         return render(request,'user/history.html')

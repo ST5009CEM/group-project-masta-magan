@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     # Custom App
 
     'account.apps.AccountConfig',
-    'user.apps.UserConfig'
+    'user.apps.UserConfig',
+    'vechiles.apps.VechilesConfig'
+
 ]
 
 MIDDLEWARE = [

@@ -1,0 +1,12 @@
+main{
+    padding-top: 10vh;
+}
+
+.image{
+    width: 80%;
+}
+
+.type > div {
+    margin-bottom: 30px;
+}
+

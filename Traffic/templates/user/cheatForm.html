@@ -1,0 +1,157 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/user/cheatform.css'%}"> {% endblock %}
+
+{% block content %}
+    <main class="container">
+
+        <form
+                action="/item/additem/add"
+                method="post"
+            >
+                <h1>Create Cheat</h1>
+                {% csrf_token %}
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Bill Book Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="billbok"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Driver Name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="name"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Vechile Name</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="vechilename"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Type</label
+                            >
+                            <select name="type"  class="form-select" aria-label="Default select example" >
+                                <option   selected disabled>Choose One</option>
+                                <option value="One way">One way</option>
+                                <option  value="Modified">Modified</option>
+                                <option  value="Lane Crossing">Lane Crossing</option>
+                                <option  value="High Speed">High Speed</option>
+
+                                <option value="Light Voilation">Light voilation</option>
+
+                              </select>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="mb-3">
+                            <label for="product name" class="form-label"
+                                >Licence Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="licence"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Phone Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="phonenumber"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Vechile Number</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="number"
+                            />
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="product-price" class="form-label"
+                                >Fine</label
+                            >
+                            <input
+                                type="text"
+                                class="form-control"
+                                placeholder=""
+                                required
+                                name="fine"
+                            />
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+
+                
+
+                <div class="col-12 mt-5">
+
+
+                    <input
+                    type="submit"
+                    name=""
+                    id=""
+                    class="btn btn-primary"
+                    value="Create Cheat"
+                />
+             
+                    
+                </div>
+            </form>
+        
+    </main>
+
+{% endblock %}
+
+{% block js %}
+{% endblock %}
