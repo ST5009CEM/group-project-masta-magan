@@ -1,0 +1,48 @@
+nav{
+    position: absolute;
+    display:flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 12vh;
+}
+
+nav > div img{
+    height: 100%;
+}
+
+.main-container{
+    background-image: url(../../Images/login/pashupatinath.jpeg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.inner-div > .row{
+    width: 80%;
+    
+}
+
+.inner-div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    background-image: linear-gradient(to left, #1b5693, #96dbe2);
+
+}
+
+.form{
+    background-color: white;
+}
+
+.inner-div > .row>div{
+    padding: 100px 70px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+}
