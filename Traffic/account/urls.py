@@ -25,7 +25,7 @@ urlpatterns = [
     path('calander/',views.calander_page),
     path('profile/',views.profile_page),
     path('cheat/',views.token_page), 
-    path('cheat/createcheat/<str:biketype>',views.create_cheat),  
+    path('cheat/createcheat',views.create_cheat),  
 
     path('history/',views.history_page),
     path('report/',views.report_page),  

@@ -26,7 +26,7 @@ def user_login(request):
 def token_page(request):
         return render(request,'user/cheat.html')
 
-def create_cheat(request,biketype):
+def create_cheat(request):
         return render(request,'user/cheatForm.html')
 
 def history_page(request):
