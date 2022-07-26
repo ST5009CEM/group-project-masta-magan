@@ -72,6 +72,8 @@ def next_profilepage(request):
     else:
             return redirect("admin/addprofile")
 
+@login_required(login_url='/admin/login')
+
 def next(request,id):
     if request.method == "POST":
 

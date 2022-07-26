@@ -41,8 +41,9 @@
                     <div class="col-lg-6 form">
                         
 
-                        <h1> Admin Login</h1>
-                            <form>
+                        <h1> User Login</h1>
+                            <form action="/login/verification" method="post">
+                                {%csrf_token%}
                                 <div class="mb-3">
                                   <label for="exampleInputEmail1" class="form-label">Username</label>
                                   <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="" name="username">

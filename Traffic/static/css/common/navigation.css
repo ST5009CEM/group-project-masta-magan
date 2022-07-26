@@ -9,8 +9,8 @@ nav{
     color: white;
 }
 
-.user-info>div >img{
-    height: 6.5vh;
+.username img{
+    height: 6vh;
     margin-right: 10px;
 }
 

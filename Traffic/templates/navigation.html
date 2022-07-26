@@ -1,7 +1,7 @@
  <!-- Header (Navigation) -->
         <!-- Index or logo -->
         <nav class="navbar navbar-expand-lg  fixed-top  px-md-5 wow fadeIn" data-wow-delay="0.1s">
-            <a href="index.html" class="navbar-brand ms-4 ms-lg-0 text-white">
+            <a href="/" class="navbar-brand ms-4 ms-lg-0 text-white">
                 <h2>Traffic Dai</h2>
             </a>
             <button type="button" class="navbar-toggler bg-white me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -10,7 +10,7 @@
             <!-- Menu Buttons -->
             <div class="collapse navbar-collapse " id="navbarCollapse">  
                 <div class="navbar-nav  mx-auto p-4 p-lg-0 menu">
-                    <a href="/profile" class="nav-item nav-link text-white active">My Profile</a>
+                    <a href="/profile/{{user.id}}" class="nav-item nav-link text-white active">My Profile</a>
                     <a href="/calander" class="nav-item text-white nav-link">Scedule</a>
                     <a href="/cheat" class="nav-item text-white nav-link">Create Cheat</a>
                     <a href="/history" class="nav-item text-white nav-link">History</a>
@@ -18,14 +18,35 @@
                 </div>
                 <!-- Username info login logout -->
                 <div class="navbar-nav nav-button username">
-                    <a href="" class="user-info">
-                        <div>
-                          <img
+
+                        <li class="nav-item dropdown">
+                            <a
+                              class="nav-link dropdown-toggle fs-5 text-white"
+                              href=""
+                              id="navbarDropdown"
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                              
+                            >
+                            <img
                             src="https://img.icons8.com/stickers/100/000000/username.png"
                           />
-                          Username
-                        </div>
-                      </a>
+                              {{request.user.username}}
+                            </a>
+                            <ul
+                              class="dropdown-menu "
+                              aria-labelledby="navbarDropdown"
+                            >
+                              <li><a class="dropdown-item " href="">Setting</a></li>
+                              <li><a class="dropdown-item " href="/profile/{{user.id}}">Profile</a></li>
+                              <li >
+                               
+                                <a class="dropdown-item " href="/logout"
+                                  >Logout </a
+                                >
+                              </li>
+                        
                 </div>
             </div>
         </nav>

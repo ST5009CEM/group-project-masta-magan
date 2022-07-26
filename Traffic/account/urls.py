@@ -23,10 +23,14 @@ urlpatterns = [
     path('',views.home_page),
     path('home/',views.home_page),
     path('calander/',views.calander_page),
-    path('profile/',views.profile_page),
+    path('profile/<int:id>',views.profile_page),
     path('cheat/',views.token_page), 
     path('cheat/createcheat',views.create_cheat),  
     path('login/',views.user_login),
+
+    path('logout/',views.log_out),
+
+
 
     path('history/',views.history_page),
     path('report/',views.report_page), 
