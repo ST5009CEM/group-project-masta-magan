@@ -1,21 +1,18 @@
-# Project Title Here
+# Traffic Dai
 
 ## Team Name
 
 **Team Members:**
 
-1. FirstName, LastName
-2. 
-3.  
-4. 
-5. 
+1. Adip, Thapaliya
+2. Ruchan Kayastha
+3. Avinav Dev Bhatta
 
 # Project Overview
 
 ## List of Features
 
-## Installation
 
-In this section you are expected to write steps *to setup, configure, install and run* your application on someone else's computer.
+
 
 
