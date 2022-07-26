@@ -10,7 +10,7 @@
     <main class="container">
 
         <form
-                action="/admin/adduser/{{user.id}}"
+                action="/admin/adduser/{{id.uid}}"
                 method="post"
                 enctype="multipart/form-data"
             >
@@ -22,6 +22,7 @@
                     <div class="col-12">
 
                         <div class="mb-3">
+
                             <label for="product name" class="form-label"
                                 >Officer Title</label
                             >
@@ -30,7 +31,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="f_name"
+                                name="title"
                             />
                         </div>
                     </div>
@@ -44,7 +45,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="f_name"
+                                name="badge"
                             />
                         </div>
                         <div class="mb-3">
@@ -56,7 +57,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="f_name"
+                                name="section"
                             />
                         </div>
 
@@ -69,7 +70,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="username"
+                                name="role"
                             />
                         </div>
 
@@ -82,7 +83,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="password"
+                                name="area"
                             />
                         </div>
 
@@ -103,7 +104,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="l_name"
+                                name="date"
                             />
                         </div>
 
@@ -116,7 +117,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="email"
+                                name="age"
                             />
                         </div>
 
@@ -129,7 +130,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="confirmpassword"
+                                name="contact"
                             />
                         </div>
 
@@ -142,7 +143,7 @@
                                 class="form-control"
                                 placeholder=""
                                 required
-                                name="confirmpassword"
+                                name="address"
                             />
                         </div>
 
@@ -166,7 +167,7 @@
                             class="form-control"
                             placeholder=""
                             required
-                            name="f_name"
+                            name="medals"
                         />
                     </div>
 
@@ -179,7 +180,7 @@
                             class="form-control"
                             placeholder=""
                             required
-                            name="f_name"
+                            name="badges"
                         />
                     </div>
 
@@ -198,7 +199,7 @@
                             class="form-control"
                             placeholder=""
                             required
-                            name="l_name"
+                            name="solvedcases"
                         />
                     </div>
 
@@ -211,7 +212,7 @@
                             class="form-control"
                             placeholder=""
                             required
-                            name="email"
+                            name="cheat"
                         />
                     </div>
     
@@ -232,7 +233,7 @@
                             class="form-control"
                             id="exampleFormControlTextarea3"
                             rows="10"
-                            name="product_description"
+                            name="description"
                         >
                     </textarea
                         >
@@ -255,7 +256,7 @@
 
                     <input
                         type="file"
-                        name="product_image"
+                        name="profile_image"
                         accept="image/*"
                         id="file"
                         onchange="loadFile(event)"

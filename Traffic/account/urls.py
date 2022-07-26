@@ -26,6 +26,7 @@ urlpatterns = [
     path('profile/',views.profile_page),
     path('cheat/',views.token_page), 
     path('cheat/createcheat',views.create_cheat),  
+    path('login/',views.user_login),
 
     path('history/',views.history_page),
     path('report/',views.report_page), 

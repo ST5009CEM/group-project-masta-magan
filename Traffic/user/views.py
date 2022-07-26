@@ -14,6 +14,8 @@ from vechiles.models import LostModel
 from django.contrib.auth.models import User
 
 
+from user.models import UserInfoModel
+
 
 # Create your views here.
 @login_required(login_url='/admin/login')
@@ -54,20 +56,49 @@ def next_profilepage(request):
                 email = email,
 
             )
+            user = authenticate(request,username=username, password=password)
+            if user is not None:
 
-            user = User.objects.get(request,username=username,password=password)
+                uid = user.id 
 
-            return render(request,'admin/nextprofile.html',{'user',user})
+                id={
+                    'uid': uid
+                    
+                }
+            
+                return render(request,'admin/nextprofile.html',{"id":id})
         
 
     else:
             return redirect("admin/addprofile")
 
 def next(request,id):
-    data = UserInfoForm(request.POST, request.FILES)
-    data.save()
+    if request.method == "POST":
 
-    return redirect('admin/addprofile')
+        
+        title = request.POST['title']
+        badge = request.POST['badge']  
+        date = request.POST['date']
+        description = request.POST['description']  
+        section = request.POST['section']
+        age = request.POST['age'] 
+
+        role = request.POST['role']
+        contact = request.POST['contact']  
+        area = request.POST['area']
+        address = request.POST['address']  
+        medals = request.POST['medals']
+        solvedcases = request.POST['solvedcases'] 
+
+        badges = request.POST['badges']
+        cheat = request.POST['cheat'] 
+
+        profile_image  = request.FILES.get('profile_image')
+
+
+        UserInfoModel.objects.create(uid=id,title=title,badge=badge,date=date,description=description,section=section,age=age,role=role,contact=contact,area=area,address=address,medals=medals,solvedcases=solvedcases,badges=badges,cheat=cheat,profile_image=profile_image)
+
+        return redirect('/admin/addprofile')
     
 
 

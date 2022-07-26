@@ -23,7 +23,7 @@ def profile_page(request):
 
 
 def user_login(request):
-    return render(request,'user/login.html')
+    return render(request,'login/userlogin.html')
 
 def token_page(request):
         return render(request,'user/cheat.html')
