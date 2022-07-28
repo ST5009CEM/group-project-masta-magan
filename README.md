@@ -11,11 +11,11 @@
 # Project Overview
   
 ## List of Features
-Efficient software with a simple UI.
-Easy to modify.
-Reduces the cost of management and users.
-Increases the efficiency and workflow of staff.
-Manages data of vehicles and riders easily.
+Efficient software with a simple UI.<br />
+Easy to modify.<br />
+Reduces the cost of management and users.<br />
+Increases the efficiency and workflow of staff.<br />
+Manages data of vehicles and riders easily.<br />
 Shifts manual paperwork process of fining.
 
 
