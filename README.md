@@ -9,6 +9,7 @@
 3. Avinav Dev Bhatta
 
 # Project Overview
+  Our project Traffic Dai is a web-based application created to make the fining system easier and convinent.
   
 ## List of Features
 Efficient software with a simple UI.<br />
